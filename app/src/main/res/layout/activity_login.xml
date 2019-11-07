@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Admin Authentication"
+        android:layout_centerHorizontal="true"
+
+        android:textColor="#000"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:layout_marginTop="30dp"
+        android:id="@+id/text_authentication"/>
+    <TextView
+
+        android:layout_below="@+id/text_authentication"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter Your User ID and Password"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center"
+        android:textColor="#000"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:layout_marginTop="40dp"
+        android:id="@+id/text1"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="This App is only made for Admin to control a Big System. So please keeps your Id and password be private. This work like a server....."
+        android:textColor="#000"
+        android:textAlignment="center"
+        android:textSize="15dp"
+        android:layout_below="@+id/text1"
+        android:layout_marginTop="20sp"
+        android:id="@+id/text_info"/>
+
+    <AutoCompleteTextView
+        android:id="@+id/class_name"
+        android:layout_below="@+id/text_info"
+        android:background="@drawable/edittext_background"
+        android:padding="10dp"
+        android:textColor="#000"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginStart="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter your User Name">
+
+        <requestFocus />
+    </AutoCompleteTextView>
+    <EditText
+        android:id="@+id/admission_no"
+        android:layout_below="@+id/class_name"
+        android:background="@drawable/edittext_background"
+        android:padding="10dp"
+        android:textColor="#000"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="40dp"
+
+        android:layout_marginStart="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password"/>
+
+    <Button
+        android:background="@drawable/gradient_button"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        android:id="@+id/login"
+        android:textSize="18dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/admission_no"
+        android:text="Server Login"/>
+
+
+
+</RelativeLayout>
