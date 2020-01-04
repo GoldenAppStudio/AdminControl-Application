@@ -10,12 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".AdminGuide"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:parentActivityName=".MainActivity"></activity>
         <activity
             android:name=".Attendance"
             android:parentActivityName=".MainActivity" />
         <activity
-            android:name=".Facilities"
+            android:name=".AdsContact"
             android:parentActivityName=".MainActivity" />
         <activity
             android:name=".SplashScreen"

@@ -4,15 +4,6 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.NavigationView;
-import android.support.design.widget.Snackbar;
-import android.support.v4.view.GravityCompat;
-import android.support.v4.widget.DrawerLayout;
-import android.support.v7.app.ActionBarDrawerToggle;
-import android.support.v7.app.AlertDialog;
-import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -20,6 +11,17 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.Toast;
+
+import androidx.appcompat.app.ActionBarDrawerToggle;
+import androidx.appcompat.app.AlertDialog;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
+import androidx.core.view.GravityCompat;
+import androidx.drawerlayout.widget.DrawerLayout;
+
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
+import com.google.android.material.navigation.NavigationView;
+import com.google.android.material.snackbar.Snackbar;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -47,7 +49,7 @@ public class MainActivity extends AppCompatActivity
 
         mListView = findViewById(R.id.listView);
 
-        final String[] Name =  {"Register New Student ","Edit Student Data","All Notifications","Student's Attendance","School Facilities"};
+        final String[] Name =  {"Register New Service","Edit Services","Send Notification Into App","Contact Info","Ads Providing Contact"};
 
         final ArrayAdapter<String> adapter = new ArrayAdapter<>(this,android.R.layout.simple_list_item_1,Name);
 
@@ -89,7 +91,7 @@ public class MainActivity extends AppCompatActivity
                 }
                 else if (myNames == Name[4])
                 {
-                    Intent intent =  new Intent(MainActivity.this,Facilities.class);
+                    Intent intent =  new Intent(MainActivity.this, AdsContact.class);
                     startActivity(intent);
                     Toast.makeText(MainActivity.this, "" + myNames, Toast.LENGTH_SHORT).show();
 
