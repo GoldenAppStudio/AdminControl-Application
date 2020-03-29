@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/edittext_background"
+    android:layout_height="match_parent"
+    tools:context=".NewStudentRegister">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/AdImage"
+            android:layout_width="120dp"
+            android:layout_gravity="center"
+            android:layout_height="120dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/logo"
+            app:civ_border_color="#FF000000"
+            app:civ_border_width="2dp" />
+
+
+        <TextView
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="* ad provider avatar"
+            android:textSize="16sp"
+            android:textColor="#333"
+            android:layout_marginTop="10dp"
+            android:id="@+id/text_review"/>
+        <EditText
+            android:id="@+id/AdName"
+            android:background="@drawable/edittext_background"
+            android:padding="10dp"
+            android:textColor="#000"
+            android:textSize="20sp"
+            android:hint="* Advertiser Name"
+            android:layout_marginTop="35dp"
+            android:layout_marginEnd="35dp"
+            android:layout_marginStart="35dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:id="@+id/AdEmail"
+            android:background="@drawable/edittext_background"
+            android:padding="10dp"
+            android:textColor="#000"
+            android:textSize="20sp"
+            android:inputType="textEmailAddress"
+            android:hint="Advertiser Email"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="35dp"
+            android:layout_marginStart="35dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+        <EditText
+            android:id="@+id/AdNo"
+            android:background="@drawable/edittext_background"
+            android:padding="10dp"
+            android:textColor="#000"
+            android:textSize="20sp"
+            android:hint="Advertiser Phone"
+            android:inputType="phone"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="35dp"
+            android:layout_marginStart="35dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+        <EditText
+            android:id="@+id/AdAddress"
+            android:background="@drawable/edittext_background"
+            android:padding="10dp"
+            android:textColor="#000"
+            android:textSize="20sp"
+            android:hint="Advertiser Address"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="35dp"
+            android:layout_marginStart="35dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:id="@+id/AdWeb"
+            android:background="@drawable/edittext_background"
+            android:padding="10dp"
+            android:textColor="#000"
+            android:textSize="20sp"
+            android:hint="Advertiser Website"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="35dp"
+            android:layout_marginStart="35dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+        <EditText
+            android:id="@+id/AdSD"
+            android:background="@drawable/edittext_background"
+            android:padding="10dp"
+            android:textColor="#000"
+            android:textSize="20sp"
+            android:inputType="textShortMessage"
+            android:hint="* Short Description"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="35dp"
+            android:layout_marginStart="35dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+        <EditText
+            android:id="@+id/AdLD"
+            android:background="@drawable/edittext_background"
+            android:padding="10dp"
+            android:textColor="#000"
+            android:textSize="20sp"
+            android:inputType="textMultiLine"
+            android:hint="* Long Description"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="35dp"
+            android:layout_marginStart="35dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+        <EditText
+            android:id="@+id/Priority"
+            android:background="@drawable/edittext_background"
+            android:padding="10dp"
+            android:textColor="#000"
+            android:textSize="20sp"
+            android:inputType="number"
+            android:hint="* Priority (1 - 1000)"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="35dp"
+            android:layout_marginStart="35dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+
+        <Button
+            android:background="@drawable/gradient_button"
+            android:textColor="#fff"
+            android:textSize="17sp"
+            android:textAllCaps="false"
+            android:id="@+id/AdOK"
+            android:layout_marginBottom="30dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="60dp"
+            android:layout_marginStart="60dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Show In-App Ad"/>
+
+
+    </LinearLayout>
+
+</ScrollView>

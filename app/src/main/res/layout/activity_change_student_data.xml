@@ -1,9 +1,131 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".ChangeStudentData">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+    <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/aa"
+        android:visibility="invisible"
+        android:layout_width="120dp"
+        android:layout_gravity="center"
+        android:layout_height="120dp"
+        android:layout_marginTop="85dp"
+        android:src="@drawable/logo"
+        app:civ_border_color="#FF000000"
+        app:civ_border_width="2dp" />
+
+    <TextView
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Please select service"
+        android:textSize="20sp"
+        android:textColor="#000"
+        android:layout_marginTop="-30dp"
+        android:id="@+id/ab"/>
+
+    <TextView
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="service avatar"
+        android:textSize="16sp"
+        android:textColor="#333"
+        android:visibility="invisible"
+        android:layout_marginTop="10dp"
+        android:id="@+id/ac"/>
+    <Spinner
+        android:layout_gravity="center"
+        android:id="@+id/ppq"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="35dp"
+        android:background="@drawable/edittext_background"
+        android:padding="10dp"
+        android:textAlignment="center"
+        android:textColor="#000">
+    </Spinner>
+
+    <EditText
+        android:id="@+id/ad"
+        android:background="@drawable/edittext_background"
+        android:padding="10dp"
+        android:textColor="#000"
+        android:textSize="20sp"
+        android:visibility="invisible"
+        android:hint="Enter Service Name"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="35dp"
+        android:layout_marginStart="35dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:background="@drawable/gradient_button"
+        android:textColor="#fff"
+        android:textSize="17sp"
+        android:textAllCaps="false"
+        android:id="@+id/az"
+        android:layout_marginTop="-30dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginStart="60dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Next "/>
+
+
+    <Button
+        android:background="@drawable/gradient_button"
+        android:textColor="#fff"
+        android:textSize="17sp"
+        android:textAllCaps="false"
+        android:visibility="invisible"
+        android:id="@+id/zSubmit"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginStart="60dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Submit Change"/>
+
+    <Button
+        android:background="@drawable/gradient_button"
+        android:textColor="#fff"
+        android:textSize="17sp"
+        android:textAllCaps="false"
+        android:visibility="invisible"
+        android:id="@+id/zSS"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginStart="60dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add New Sub-Service"/>
+
+
+
+    <Button
+        android:background="@drawable/edit_background"
+        android:textColor="#b00"
+        android:textSize="17sp"
+        android:textAllCaps="false"
+        android:visibility="invisible"
+        android:id="@+id/zDelete"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginStart="60dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Remove Service"/>
+
+
+
+
+
+</LinearLayout>

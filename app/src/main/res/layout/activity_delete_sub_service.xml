@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".DeleteSubService">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Delete Sub-Service"
+        android:textColor="#000"
+        android:textSize="35sp"
+        android:layout_marginTop="50dp"
+        android:layout_gravity="center"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Service"
+        android:textSize="12sp"
+        android:textColor="#666"
+        android:textStyle="italic"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="35dp" />
+
+    <Spinner
+        android:layout_marginTop="15dp"
+        android:textSize="18sp"
+        android:textColorHint="#222"
+        android:id="@+id/dServiceSpinner"
+        android:padding="8dp"
+        android:inputType="textMultiLine"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginStart="50dp"
+        android:background="@drawable/edittext_background">
+    </Spinner>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sub-Service"
+        android:textSize="12sp"
+        android:textColor="#666"
+        android:textStyle="italic"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="25dp" />
+
+    <Spinner
+        android:layout_marginTop="15dp"
+        android:textSize="18sp"
+        android:textColorHint="#222"
+        android:id="@+id/dSubServiceSpinner"
+        android:padding="8dp"
+        android:inputType="textMultiLine"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginStart="50dp"
+        android:background="@drawable/edittext_background">
+    </Spinner>
+
+
+    <Button
+        android:background="@drawable/edittext_background"
+        android:textColor="#f00"
+        android:id="@+id/deleteSubService"
+        android:layout_marginBottom="10dp"
+        android:textSize="18sp"
+        android:textAllCaps="false"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginStart="100dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Delete"/>
+
+
+
+</LinearLayout>

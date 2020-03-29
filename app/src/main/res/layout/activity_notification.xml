@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/edittext_background"
+    tools:context=".Notification">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+
+
+        <EditText
+            android:id="@+id/bbc"
+            android:background="@drawable/edittext_background"
+            android:padding="10dp"
+            android:textColor="#000"
+            android:textSize="20sp"
+            android:layout_marginTop="100dp"
+            android:layout_marginEnd="35dp"
+            android:text=""
+            android:layout_marginStart="35dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:id="@+id/cnn"
+            android:background="@drawable/gradient_button"
+            android:textColor="#fff"
+            android:textSize="17sp"
+            android:layout_gravity="center"
+            android:layout_marginTop="40dp"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Submit"/>
+
+
+
+
+    </LinearLayout>
+
+
+</ScrollView>

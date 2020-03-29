@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Travel">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="10dp"
+            android:textStyle="italic"
+            android:textSize="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Trips"/>
+
+        <EditText
+            android:layout_marginTop="10dp"
+            android:textSize="22sp"
+            android:textColorHint="#222"
+            android:id="@+id/tripX"
+            android:padding="8dp"
+            android:inputType="textMultiLine"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:hint=" Enter Trips Link"
+            android:background="@drawable/edittext_background">
+
+        </EditText>
+
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="10dp"
+            android:textStyle="italic"
+            android:textSize="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Flights"/>
+
+        <EditText
+            android:layout_marginTop="10dp"
+            android:textSize="22sp"
+            android:textColorHint="#222"
+            android:id="@+id/flightX"
+            android:padding="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textMultiLine"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:hint=" Enter Flights Link"
+            android:background="@drawable/edittext_background">
+
+        </EditText>
+
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="10dp"
+            android:textStyle="italic"
+            android:textSize="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hotels"/>
+
+        <EditText
+            android:layout_marginTop="10dp"
+            android:textSize="22sp"
+            android:textColorHint="#222"
+            android:id="@+id/hotelX"
+            android:padding="8dp"
+            android:inputType="textMultiLine"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:hint=" Enter Hotels Link"
+            android:background="@drawable/edittext_background">
+
+        </EditText>
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="10dp"
+            android:textStyle="italic"
+            android:textSize="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Trains"/>
+
+        <EditText
+            android:textColorHint="#555"
+            android:layout_marginEnd="10dp"
+            android:inputType="textMultiLine"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:textSize="22sp"
+            android:id="@+id/trainX"
+            android:padding="8dp"
+            android:layout_below="@+id/emailV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Train Link "
+            android:background="@drawable/edittext_background">
+        </EditText>
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="10dp"
+            android:textStyle="italic"
+            android:textSize="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cab &amp; Taxi"/>
+
+        <EditText
+            android:textColorHint="#555"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:inputType="textMultiLine"
+            android:textSize="22sp"
+            android:padding="8dp"
+            android:id="@+id/taxiX"
+            android:layout_below="@+id/phoneV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Taxi Link"
+            android:background="@drawable/edittext_background">
+        </EditText>
+
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="10dp"
+            android:textStyle="italic"
+            android:textSize="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cruise Ships"/>
+
+        <EditText
+            android:layout_marginTop="10dp"
+            android:textSize="22sp"
+            android:textColorHint="#222"
+            android:id="@+id/shipX"
+            android:padding="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textMultiLine"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:hint=" Enter Ships Link"
+            android:background="@drawable/edittext_background">
+
+        </EditText>
+
+        <Button
+            android:background="@drawable/gradient_button"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:id="@+id/okT"
+            android:layout_marginBottom="10dp"
+            android:textSize="18sp"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Submit Details"/>
+
+
+    </LinearLayout>
+
+</ScrollView>

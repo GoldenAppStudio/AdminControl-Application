@@ -7,11 +7,11 @@
         <item
             android:id="@+id/nav_attendance"
             android:icon="@drawable/attendance"
-            android:title="Student's Attendance" />
+            android:title="Register new service" />
         <item
             android:id="@+id/nav_notification"
             android:icon="@drawable/notification"
-            android:title="Notification" />
+            android:title="AdsContact" />
         <item
             android:id="@+id/nav_logout"
             android:icon="@drawable/power"
@@ -29,8 +29,6 @@
                 android:id="@+id/nav_imp_note"
                 android:icon="@drawable/imp_note"
                 android:title="Admin Guide" />
-
-
         </menu>
     </item>
 

@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="studio.golden.adminapp">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE_EXTERNAL_STORAGE" />
 
     <application
         android:allowBackup="true"
@@ -8,9 +13,11 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
-        <activity android:name=".AdminGuide"
-            android:parentActivityName=".MainActivity"></activity>
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning">
+        <activity
+            android:name=".AdminGuide"
+            android:parentActivityName=".MainActivity" />
         <activity
             android:name=".Attendance"
             android:parentActivityName=".MainActivity" />
@@ -43,6 +50,27 @@
             android:name=".MainActivity"
             android:label="@string/app_name"
             android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Base.Theme.AppCompat" />
+        <activity android:name=".AddSP" />
+        <activity android:name=".NewSP" />
+        <activity android:name=".SPShow" />
+        <activity android:name=".Notification" />
+        <activity android:name=".NewAd" />
+        <activity android:name=".EditAd" />
+        <activity android:name=".SubServiceAdd" />
+        <activity android:name=".EditSubService" />
+        <activity android:name=".SPEdit" />
+        <activity android:name=".Chooser" />
+        <activity android:name=".Travel" />
+        <activity android:name=".BusPlace" />
+        <activity android:name=".BusRoute" />
+        <activity android:name=".NewStart" />
+        <activity android:name=".Ads" />
+        <activity android:name=".SPMain" />
+        <activity android:name=".DeleteSubService"></activity>
     </application>
 
 </manifest>

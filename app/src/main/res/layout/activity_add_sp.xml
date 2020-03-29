@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/edittext_background"
+    tools:context=".AddSP">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+
+        <RelativeLayout
+            android:layout_marginTop="25dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerInParent="true"
+                android:layout_marginStart="25dp"
+                android:id="@+id/tttt"
+                android:gravity="center"
+                android:text="Choose your sign board"
+                android:textAlignment="center"
+                android:textColor="#000"
+                android:textSize="16sp"
+                android:textStyle="bold|italic" />
+
+
+            <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/setup_image"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:layout_marginTop="35dp"
+                android:layout_marginEnd="25dp"
+                android:src="@drawable/logo"
+                app:civ_border_color="#FF000000"
+                app:civ_border_width="2dp" />
+
+        </RelativeLayout>
+
+
+        <EditText
+            android:id="@+id/edit_text_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text_info"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginEnd="25dp"
+            android:background="@drawable/edittext_background"
+            android:hint="* Enter Your/Business Name"
+            android:padding="10dp"
+            android:textColor="#000"
+            android:textColorHint="#222" />
+
+        <Spinner
+            android:id="@+id/class_name"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="20dp"
+            android:theme="@style/MyTheme"
+            android:layout_marginEnd="25dp"
+            android:background="@drawable/edittext_background"
+            android:padding="10dp"
+            android:textAlignment="center"
+            android:textColor="#000">
+
+        </Spinner>
+
+        <Spinner
+            android:id="@+id/ssss"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="20dp"
+            android:theme="@style/MyTheme"
+            android:layout_marginEnd="25dp"
+            android:background="@drawable/edittext_background"
+            android:padding="10dp"
+            android:textAlignment="center"
+            android:textColor="#000">
+
+        </Spinner>
+
+        <Button
+            android:id="@+id/bbbb"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="60dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="60dp"
+            android:background="@drawable/gradient_button"
+            android:text="Continue"
+            android:textColor="#fff"
+            android:textSize="20dp"
+            android:padding="16dp"
+            android:layout_marginBottom="15dp"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+
+        <Spinner
+            android:id="@+id/state_spinner"
+            android:background="@drawable/edittext_background"
+            android:padding="10dp"
+            android:entries="@array/country_state"
+            android:textAlignment="center"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="25dp"
+            android:theme="@style/MyTheme"
+            android:textColor="#000"
+            android:layout_marginStart="25dp"
+            android:layout_width="match_parent"
+            android:layout_height="45dp">
+        </Spinner>
+
+        <Spinner
+            android:id="@+id/district_chooser"
+            android:background="@drawable/edittext_background"
+            android:padding="10dp"
+            android:textAlignment="center"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="25dp"
+            android:textColor="#000"
+            android:visibility="visible"
+            android:theme="@style/MyTheme"
+            android:layout_marginStart="25dp"
+            android:layout_width="match_parent"
+            android:layout_height="45dp">
+        </Spinner>
+
+        <EditText
+            android:id="@+id/edit_text_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="25dp"
+            android:background="@drawable/edittext_background"
+            android:hint="* Description"
+            android:inputType="textMultiLine"
+            android:padding="10dp"
+            android:textColor="#000"
+            android:textColorHint="#222" />
+
+        <EditText
+            android:id="@+id/edit_text_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="25dp"
+            android:background="@drawable/edittext_background"
+            android:hint="* Address"
+            android:inputType="textMultiLine"
+            android:padding="10dp"
+            android:textColor="#000"
+            android:textColorHint="#222" />
+
+        <EditText
+            android:id="@+id/edit_text_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="25dp"
+            android:background="@drawable/edittext_background"
+            android:hint="* Phone No. "
+            android:inputType="number"
+            android:maxLength="10"
+            android:padding="10dp"
+            android:textColor="#000"
+
+            android:textColorHint="#222" />
+
+        <EditText
+            android:id="@+id/edit_text_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="25dp"
+            android:background="@drawable/edittext_background"
+            android:hint="  Email"
+            android:padding="10dp"
+            android:textColor="#000"
+            android:textColorHint="#222" />
+
+
+        <EditText
+            android:id="@+id/edit_text_price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="25dp"
+            android:background="@drawable/edittext_background"
+            android:hint="  Price Per Hour/Unit (INR)"
+            android:inputType="textMultiLine"
+            android:padding="10dp"
+            android:textColor="#000"
+
+            android:textColorHint="#222" />
+
+
+        <Button
+            android:id="@+id/submitDetails"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="60dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="60dp"
+            android:background="@drawable/gradient_button"
+            android:text="Continue"
+            android:textColor="#fff"
+            android:textSize="20sp"
+            android:padding="16dp"
+            android:layout_marginBottom="15dp"
+            android:textStyle="bold"
+            android:visibility="visible" />
+
+    </LinearLayout>
+
+</ScrollView>

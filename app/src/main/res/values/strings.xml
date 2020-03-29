@@ -6,4 +6,79 @@
     <string name="nav_header_subtitle">android.studio@android.com</string>
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Settings</string>
+
+    <string-array name="country_state">
+
+        <item>Haryana</item>
+
+        <item>Punjab</item>
+
+        <item>Delhi (NCT)</item>
+
+        <item>Andhra Pradesh</item>
+
+        <item>Arunachal Pradesh</item>
+
+        <item>Assam</item>
+
+        <item>Bihar</item>
+
+        <item>Chandigarh (UT)</item>
+
+        <item>Chhattisgarh</item>
+
+        <item>Dadra &amp; Nagar Haveli (UT)</item>
+
+        <item>Daman and Diu (UT)</item>
+
+        <item>Goa</item>
+
+        <item>Gujarat</item>
+
+        <item>Himachal Pradesh</item>
+
+        <item>Jammu and Kashmir</item>
+
+        <item>Jharkhand</item>
+
+        <item>Karnataka</item>
+
+        <item>Kerala</item>
+
+        <item>Lakshadweep (UT)</item>
+
+        <item>Madhya Pradesh</item>
+
+        <item>Maharashtra</item>
+
+        <item>Manipur</item>
+
+        <item>Meghalaya</item>
+
+        <item>Mizoram</item>
+
+        <item>Nagaland</item>
+
+        <item>Odisha</item>
+
+        <item>Puducherry (UT)</item>
+
+        <item>Rajasthan</item>
+
+        <item>Sikkim</item>
+
+        <item>Tamil Nadu</item>
+
+        <item>Telangana</item>
+
+        <item>Tripura</item>
+
+        <item>Uttarakhand</item>
+
+        <item>Uttar Pradesh</item>
+
+        <item>West Bengal</item>
+
+    </string-array>
+
 </resources>

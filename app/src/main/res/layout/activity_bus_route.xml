@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BusRoute">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="Please enter starting point and destination"
+            android:textAlignment="center"
+            android:textSize="25sp"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:textColor="#000"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Choose existing starting point"
+            android:textSize="15sp"
+            android:textStyle="italic"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="15dp"
+            android:textColor="#444"/>
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:id="@+id/spinnerBR"
+            android:background="@drawable/edittext_background"
+            android:layout_marginEnd="15dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="10dp"
+            android:paddingStart="5dp"
+            android:paddingEnd="5dp" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Destination"
+            android:textSize="15sp"
+            android:textStyle="italic"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="15dp"
+            android:textColor="#444"/>
+
+        <EditText
+            android:layout_marginEnd="15dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="10dp"
+            android:paddingStart="5dp"
+            android:paddingEnd="5dp"
+            android:id="@+id/endBR"
+            android:background="@drawable/edittext_background"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:hint="Destination"/>
+
+        <Button
+            android:layout_marginEnd="15dp"
+            android:layout_marginStart="15dp"
+            android:text="Submit"
+            android:textAllCaps="false"
+            android:id="@+id/submitBR"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/gradient_button"
+            android:textColor="#ddd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:textColor="#000"
+            android:text="Or"
+            android:layout_marginTop="10dp"
+            android:textAlignment="center"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:layout_marginEnd="15dp"
+            android:layout_marginStart="15dp"
+            android:textAllCaps="false"
+            android:text="Insert new starting point"
+            android:id="@+id/newStart"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/gradient_button"
+            android:textColor="#ddd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+
+</ScrollView>
